@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+<div class="container">
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Material ID</th>
+            <th scope="col">Vendor ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Unit</th>
+            <th scope="col">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr th:each=" m, mstart : ${listM}" >
+                <td th:text="${mstart.index + 1}"></td>
+                <td th:text="${m.materialID}"></td>
+                <td th:text="${m.vendorID}"></td>
+                <td th:text="${m.name}"></td>
+                <td th:text="${m.price}"></td>
+                <td th:text="${m.unit}"></td>
+                <td th:text="${m.desc}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+</html>

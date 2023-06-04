@@ -1,4 +1,4 @@
-package com.example.inventory_management.model;
-
-public class BaseDTO {
-}
+//package com.example.inventory_management.model;
+//
+//public class BaseDTO {
+//}

@@ -44,5 +44,5 @@ public class EmployeeEntity {
     private Date endWorking;
 
     @Column(name = "manager_id")
-    private String manager_id;
+    private String managerID;
 }
