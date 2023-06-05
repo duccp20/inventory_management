@@ -37,12 +37,12 @@ public class EmployeeEntity {
     @Column(name = "DOB")
     private Date birthDay;
 
-    @Column(name = "StartWorking_date")
+    @Column(name = "startworking_date")
     private Date startWorking;
 
-    @Column(name = "EndWorking_date")
+    @Column(name = "endworking_date")
     private Date endWorking;
 
-    @Column(name = "manager_id")
-    private String managerID;
+    @Column(name = "role")
+    private String role;
 }
